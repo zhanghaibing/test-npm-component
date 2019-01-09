@@ -1,0 +1,10 @@
+dist/
+release/
+.vscode/
+.idea/
+node_modules/
+coverage/
+junit.xml
+bower_components/
+logs/
+yarn-error.log
