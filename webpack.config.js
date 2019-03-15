@@ -7,8 +7,8 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const config = {
   mode: 'development',
   entry: {
-    app: './src/app.js',
-    // print: './src/print.js',
+    // app: './src/app.js',
+    app: './src/index.js',
   },
   output: {
     filename: '[name].bundle.js',
@@ -16,6 +16,11 @@ const config = {
   },
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+      },
       {
         test: /\.css$/,
         use: [

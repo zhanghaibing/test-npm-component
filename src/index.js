@@ -4,6 +4,9 @@ import './style.css';
 import printMe from './print.js';
 import { cube } from './math.js';
 
+// console.log(undef);
+// console.log(square(5));
+
 function component() {
   var element = document.createElement('div');
 
